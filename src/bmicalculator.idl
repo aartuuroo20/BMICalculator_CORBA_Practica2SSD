@@ -1,0 +1,5 @@
+module BMICalculatorApp {
+    interface BMICalculator {
+        double calculateBMI(in double height, in double weight);
+    };
+};
