@@ -33,7 +33,7 @@ public class BMICalculatorClient {
             
             Scanner in = new Scanner(System.in);
 
-            System.out.print("Are you men or female?: ");
+            System.out.print("Are you man or female?: ");
             String gender = in.nextLine();
 
             
