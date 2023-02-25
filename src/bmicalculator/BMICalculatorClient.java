@@ -54,11 +54,11 @@ public class BMICalculatorClient {
             }else{
                 System.out.println("TMB: " + bmicalcImpl.calculateTMB(height, weight, age));
             }
-            
 
-            
+
+            bmicalcImpl.shutdown();
         } catch (org.omg.CORBA.ORBPackage.InvalidName | NotFound | CannotProceed | InvalidName ex) {
             Logger.getLogger(BMICalculatorClient.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        }        
     }
 }

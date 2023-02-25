@@ -3,5 +3,6 @@ module BMICalculatorApp {
         double calculateBMI(in double height, in double weight);
         double calculateTMB(in double height, in double weight, in double age);
         double calculateTMBf(in double height, in double weight, in double age);
+        oneway void shutdown();
     };
 };
