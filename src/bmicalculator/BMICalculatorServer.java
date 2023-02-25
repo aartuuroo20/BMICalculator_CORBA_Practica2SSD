@@ -34,6 +34,14 @@ class BMICalculatorImpl extends BMICalculatorPOA {
     public double calculateBMI(double height, double weight) {
         return weight / (height * height);
     }
+
+    public double calculateTMB(double height, double weight, double age){
+        return (10 * height) + (6.25 * weight) - (5 * age) + 5;
+    }
+
+    public double calculateTMBf(double height, double weight, double age){
+        return (10 * height) + (6.25 * weight) - (5 * age) - 161;
+    }
 }
 
 public class BMICalculatorServer {

@@ -32,15 +32,30 @@ public class BMICalculatorClient {
             bmicalcImpl = BMICalculatorHelper.narrow(ncRef.resolve_str(name));
             
             Scanner in = new Scanner(System.in);
+
+            System.out.print("Are you men or female?: ");
+            String gender = in.nextLine();
+
             
-            System.out.print("height: ");
+            System.out.print("height(cm): ");
             double height = in.nextDouble();
             
-            System.out.print("weight: ");
+            System.out.print("weight(kg): ");
             double weight = in.nextDouble();
-            
+
+            System.out.print("Age: ");
+            double age = in.nextInt();
+
             System.out.println("Obtained BMICalculator object: " + bmicalcImpl);
             System.out.println("BMI: " + bmicalcImpl.calculateBMI(height, weight));
+
+            if(gender == "female"){
+                System.out.println("TMB: " + bmicalcImpl.calculateTMBf(height, weight, age));
+            }else{
+                System.out.println("TMB: " + bmicalcImpl.calculateTMB(height, weight, age));
+            }
+            
+
             
         } catch (org.omg.CORBA.ORBPackage.InvalidName | NotFound | CannotProceed | InvalidName ex) {
             Logger.getLogger(BMICalculatorClient.class.getName()).log(Level.SEVERE, null, ex);
