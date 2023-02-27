@@ -74,10 +74,10 @@ public class BMICalculatorClient {
                 System.out.println("Your TMB is: " + tmb);
 
                 System.out.println("If you want to gain weight, you need to eat more,  an example of what you should eat is: ");
-                System.out.println(listaComidasSubirPeso.keySet() + " " + listaComidasSubirPeso.values() + " calories");
+                System.out.println(listaComidasSubirPeso.keySet() + " " + listaComidasSubirPeso.values() + " calories, " + "total calories: " + totalCalorias + " calories");
                 
                 System.out.println("If you want to lose weight, you need to eat less,  an example of what you should eat is: ");
-                System.out.println(listaComidasSubirPeso.keySet() + " " + listaComidasSubirPeso.values() + " calories");
+                System.out.println(listaComidasBajarPeso.keySet() + " " + listaComidasBajarPeso.values() + " calories, " + "total calories: " + totalCaloriasBajarPeso + " calories");
               
                 System.out.println("If you want to mantain weight, you are eating the right amount of calories.");
                 
@@ -89,7 +89,7 @@ public class BMICalculatorClient {
                 System.out.println(listaComidasSubirPeso.keySet() + " " + listaComidasSubirPeso.values() + " calories, " + "total calories: " + totalCalorias + " calories");
                 
                 System.out.println("If you want to lose weight, you need to eat less,  an example of what you should eat is: ");
-                System.out.println(listaComidasSubirPeso.keySet() + " " + listaComidasSubirPeso.values() + " calories, " + "total calories: " + totalCaloriasBajarPeso + " calories");
+                System.out.println(listaComidasBajarPeso.keySet() + " " + listaComidasBajarPeso.values() + " calories, " + "total calories: " + totalCaloriasBajarPeso + " calories");
               
                 System.out.println("If you want to mantain weight, you are eating the right amount of calories.");
             }
